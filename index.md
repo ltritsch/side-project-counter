@@ -10,13 +10,9 @@ Welcome to my simple web app. Below is a list of items.
   <li>Item 3</li>
   <li>Item 3</li>
   <li>Item 3</li>
-  <li>Item 3</li>
 </ul>
 
-## Counter
-
 <script>
-  // JavaScript to count the list items
   document.addEventListener('DOMContentLoaded', (event) => {
     const itemCount = document.querySelectorAll('#item-list li').length;
     document.getElementById('counter').textContent = 'Number of items: ' + itemCount;
