@@ -4,12 +4,11 @@ Welcome to my simple web app. Below is a list of items.
 
 ## List of Items
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
-- Item 6
+<ul id="item-list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
 
 ## Counter
 
@@ -18,7 +17,7 @@ Welcome to my simple web app. Below is a list of items.
 <script>
   // JavaScript to count the list items
   document.addEventListener('DOMContentLoaded', (event) => {
-    const itemCount = document.querySelectorAll('ul li').length;
+    const itemCount = document.querySelectorAll('#item-list li').length;
     document.getElementById('counter').textContent = 'Number of items: ' + itemCount;
   });
 </script>
